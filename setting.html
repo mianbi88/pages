@@ -7,34 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type="text/css">
-        *,
-        html {
+        * {
             margin: 0;
             padding: 0;
+            list-style-type: none;
+            scrollbar-width: none;
+            /* firefox */
+            -ms-overflow-style: none;
+            /* IE 10+ */
+            user-select: none;
+            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Segoe UI, Arial, Roboto, PingFang SC, miui, Hiragino Sans GB, Microsoft Yahei, sans-serif;
         }
 
-        .body>.setting-img>img {
-            width: 140px;
-            height: 140px;
+        .setting-pub-img {
+            text-align: center;
+            margin-top: -3px;
         }
 
-        .body>.setting-img>div {
-            width: 140px;
+        .setting-pub-img>.setting-text {
             font-size: 12.5px;
             text-align: center;
             color: #1f2448;
+        }
+
+        .setting-pub-img>.setting-div-title {
+            font-weight: 600;
+            color: #f50;
+            margin-top: 6px;
+            text-align: center;
+        }
+
+        .setting-pub-img>img {
+            width: 145px;
+            height: 145px;
+            margin: auto;
+            margin-top: -2px;
+        }
+
+        .setting-kaihu-ul {
+            width: 140px;
+            margin: auto;
+            font-size: 12.5px;
+            color: #1890ff;
+            text-align: center;
         }
     </style>
 </head>
 
 <body class="body">
-    <div class="setting-img">
-        <div>关注公众号<br />互相学习交流</div>
+    <div class="setting-pub-img">
+        <div class="setting-text">关注公众号<br />互相学习交流</div>
         <img src="./img/qrcode-pub.jpg" />
     </div>
-    <div class="setting-img">
-        <div>关注公众号<br />互相学习交流</div>
-        <img src="./img/wanyi.png" />
+    <div class="setting-pub-img">
+        <div class="setting-div-title">优惠开户(万一勉5)</div>
+        <ul class="setting-kaihu-ul">
+            <li>股票万一勉5</li>
+            <li>EFT/可转债 万0.5勉5</li>
+            <li>上市公司，支持同花顺</li>
+        </ul>
+        <img style="margin-top:1px;" src="./img/wanyi.png" />
     </div>
 </body>
 
